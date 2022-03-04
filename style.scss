@@ -1,0 +1,33 @@
+@import "_maquetado";
+
+$redes:(facebooklogo:#4267B2, instagramlogo:#fd1d1d);
+
+
+@media screen and (min-width:320px) {
+  
+}
+
+@media screen and (min-width:1200px) {
+
+   @each $red,
+   $color in $redes {
+      ##{$red} {
+         color: $color;
+      }
+   }
+
+   @mixin font-style ($font-style) {
+      font-style: $font-style;
+   }
+
+
+   .aquamdp {
+      color: black;
+      transition-duration: .08s;
+
+      &:hover {
+         color: map-get($redes, facebooklogo);
+
+      }
+   }
+}
