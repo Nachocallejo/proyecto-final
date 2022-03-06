@@ -39,10 +39,25 @@ header:hover {
   color: darkgrey;
 }
 
+#ubicacion {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
 @media screen and (min-width: 320px) {
   li {
     display: none;
   }
+}
+
+.lead img {
+  width: 20rem;
+  height: 15rem;
+}
+
+.nosotros img {
+  width: 20rem;
+  height: 15rem;
 }
 
 .parrafos {
@@ -52,6 +67,7 @@ header:hover {
 #formulario {
   margin-left: 4px;
   margin-right: 4px;
+  padding-bottom: 20px;
 }
 
 #formulario .button {
@@ -82,6 +98,10 @@ footer #facebooklogo2 {
 #servicio img {
   width: 20rem;
   height: 15rem;
+}
+
+#ubicacion iframe {
+  width: 90%;
 }
 
 @media screen and (min-width: 1200px) {
