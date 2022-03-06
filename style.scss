@@ -2,6 +2,7 @@
 
 $redes:(facebooklogo:#4267B2, instagramlogo:#fd1d1d, facebooklogo2:#4267B2, instagramlogo2:#fd1d1d);
 
+
 @each $red,
 $color in $redes {
    ##{$red} {
@@ -18,3 +19,4 @@ $color in $redes {
 
    }
 }
+

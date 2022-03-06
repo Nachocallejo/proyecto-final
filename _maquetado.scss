@@ -2,10 +2,6 @@ $textoprincipal:'IBM Plex Sans',
 sans-serif;
 $tamañotexto: x-large;
 
-img {
-   max-width: 40%;
-   max-height: 10%;
-}
 
 .lead {
    color: black;
@@ -14,6 +10,10 @@ img {
    border-width: 0px;
    background-color: #ffffff;
    text-align: left;
+
+   .parrafos {
+      text-align: left;
+   }
 
    p {
       font-family: $textoprincipal;
@@ -34,15 +34,15 @@ header {
    border-bottom: 0.50rem solid #EDCDBB;
    background-color: #fdf7e2;
 
-   a{
+   a {
       color: black;
       text-decoration: none;
    }
+
    &:hover {
       color: darkgrey;
    }
 }
-
 
 @media screen and (min-width:320px) {
 
@@ -51,13 +51,19 @@ header {
    }
 }
 
-.lead {
-   .h1 {
-      text-align: center;
-   }
+.parrafos {
+   text-align: center;
+}
 
-   .parrafos {
-      text-align: center;
+#formulario {
+   margin-left: 4px;
+   margin-right: 4px;
+
+   .button {
+      font-size: 16px;
+      color: black;
+      background-color: #EDCDBB;
+      border-color: black;
    }
 }
 
@@ -81,6 +87,12 @@ footer {
    display: none;
 }
 
+#servicio {
+   img {
+      width: 20rem;
+      height: 15rem;
+   }
+  }
 @media screen and (min-width:1200px) {
    header {
       #menuBurger {
@@ -94,7 +106,12 @@ footer {
       }
    }
 
-   .parrafos {text-align: left;}
+   .lead {
+      .parrafos {
+         text-align: left;
+      }
+   }
+
    footer {
       .mapa {
          display: inherit;
@@ -102,6 +119,24 @@ footer {
 
       .aqua {
          padding-left: 150px;
+      }
+   }
+
+   #formulario {
+      margin-left: 4px;
+      margin-right: 4px;
+
+      .button {
+         font-size: 16px;
+         color: black;
+         background-color: #EDCDBB;
+         border-color: black;
+
+         &:hover {
+            background-color: black;
+            color: white;
+            border-color: white;
+         }
       }
    }
 }

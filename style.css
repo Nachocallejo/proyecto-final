@@ -1,14 +1,13 @@
-img {
-  max-width: 40%;
-  max-height: 10%;
-}
-
 .lead {
   color: black;
   overflow: visible;
   border-style: solid;
   border-width: 0px;
   background-color: #ffffff;
+  text-align: left;
+}
+
+.lead .parrafos {
   text-align: left;
 }
 
@@ -36,18 +35,30 @@ header a {
   text-decoration: none;
 }
 
+header:hover {
+  color: darkgrey;
+}
+
 @media screen and (min-width: 320px) {
   li {
     display: none;
   }
 }
 
-.lead .h1 {
+.parrafos {
   text-align: center;
 }
 
-.lead .parrafos {
-  text-align: center;
+#formulario {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+#formulario .button {
+  font-size: 16px;
+  color: black;
+  background-color: #EDCDBB;
+  border-color: black;
 }
 
 footer .aqua {
@@ -68,6 +79,16 @@ footer #facebooklogo2 {
   display: none;
 }
 
+#servicio img {
+  width: 20rem;
+  height: 15rem;
+}
+
+#servicio .parrafos {
+  text-align: left;
+  text-align-last: left;
+}
+
 @media screen and (min-width: 1200px) {
   header #menuBurger {
     display: none;
@@ -77,7 +98,7 @@ footer #facebooklogo2 {
   header li {
     display: inherit;
   }
-  .parrafos {
+  .lead .parrafos {
     text-align: left;
   }
   footer .mapa {
@@ -85,6 +106,21 @@ footer #facebooklogo2 {
   }
   footer .aqua {
     padding-left: 150px;
+  }
+  #formulario {
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  #formulario .button {
+    font-size: 16px;
+    color: black;
+    background-color: #EDCDBB;
+    border-color: black;
+  }
+  #formulario .button:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
   }
 }
 
