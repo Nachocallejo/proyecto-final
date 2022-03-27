@@ -45,63 +45,50 @@ header:hover {
 }
 
 @media screen and (min-width: 320px) {
-  li {
+  .lead img {
+    width: 20rem;
+    height: 15rem;
+  }
+  .nosotros img {
+    width: 20rem;
+    height: 15rem;
+  }
+  .parrafos {
+    text-align: center;
+  }
+  #formulario {
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-bottom: 20px;
+  }
+  #formulario .button {
+    font-size: 16px;
+    color: black;
+    background-color: #EDCDBB;
+    border-color: black;
+  }
+  footer .aqua {
+    padding-right: 50px;
+  }
+  footer .mapa {
     display: none;
   }
-}
-
-.lead img {
-  width: 20rem;
-  height: 15rem;
-}
-
-.nosotros img {
-  width: 20rem;
-  height: 15rem;
-}
-
-.parrafos {
-  text-align: center;
-}
-
-#formulario {
-  margin-left: 4px;
-  margin-right: 4px;
-  padding-bottom: 20px;
-}
-
-#formulario .button {
-  font-size: 16px;
-  color: black;
-  background-color: #EDCDBB;
-  border-color: black;
-}
-
-footer .aqua {
-  padding-right: 50px;
-}
-
-footer .mapa {
-  display: none;
-}
-
-footer #instagramlogo2,
-footer #facebooklogo2 {
-  padding-left: 20px;
-}
-
-#facebooklogo,
-#instagramlogo {
-  display: none;
-}
-
-#servicio img {
-  width: 20rem;
-  height: 15rem;
-}
-
-#ubicacion iframe {
-  width: 90%;
+  footer #instagramlogo2,
+  footer #facebooklogo2 {
+    padding-left: 20px;
+  }
+  #facebooklogo,
+  #instagramlogo,
+  .menu {
+    display: none;
+  }
+  #servicio img {
+    width: 20rem;
+    height: 15rem;
+  }
+  #ubicacion iframe {
+    width: 90%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -110,7 +97,8 @@ footer #facebooklogo2 {
   }
   header #facebooklogo,
   header #instagramlogo,
-  header li {
+  header li,
+  header .menu {
     display: inherit;
   }
   .lead .parrafos {

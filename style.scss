@@ -13,10 +13,13 @@ $color in $redes {
 .aquamdp {
    color: black;
    transition-duration: .08s;
+   font-family: $titulo;
+   font-size: bold;
 
    &:hover {
       color: map-get($redes, facebooklogo);
-
    }
 }
+
+
 

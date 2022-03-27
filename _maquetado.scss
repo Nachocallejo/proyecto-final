@@ -1,6 +1,7 @@
 $textoprincipal:'IBM Plex Sans',
 sans-serif;
 $tamañotexto: x-large;
+$titulo: 'Playfair Display';
 
 
 .lead {
@@ -51,72 +52,70 @@ header {
 
 @media screen and (min-width:320px) {
 
-   li {
+
+   .lead {
+      img {
+         width: 20rem;
+         height: 15rem;
+      }
+   }
+
+   .nosotros {
+      img {
+         width: 20rem;
+         height: 15rem;
+      }
+   }
+
+   .parrafos {
+      text-align: center;
+   }
+
+   #formulario {
+      margin-left: 4px;
+      margin-right: 4px;
+      padding-bottom: 20px;
+
+      .button {
+         font-size: 16px;
+         color: black;
+         background-color: #EDCDBB;
+         border-color: black;
+      }
+   }
+
+   footer {
+      .aqua {
+         padding-right: 50px;
+      }
+
+      .mapa {
+         display: none;
+      }
+
+      #instagramlogo2,
+      #facebooklogo2 {
+         padding-left: 20px;
+      }
+   }
+
+   #facebooklogo,
+   #instagramlogo,
+   .menu {
       display: none;
    }
-}
 
-.lead {
-   img {
-      width: 20rem;
-      height: 15rem;
-   }
-}
-
-.nosotros {
-   img {
-      width: 20rem;
-      height: 15rem;
-   }
-}
-
-.parrafos {
-   text-align: center;
-}
-
-#formulario {
-   margin-left: 4px;
-   margin-right: 4px;
-   padding-bottom: 20px;
-
-   .button {
-      font-size: 16px;
-      color: black;
-      background-color: #EDCDBB;
-      border-color: black;
-   }
-}
-
-footer {
-   .aqua {
-      padding-right: 50px;
+   #servicio {
+      img {
+         width: 20rem;
+         height: 15rem;
+      }
    }
 
-   .mapa {
-      display: none;
-   }
-
-   #instagramlogo2,
-   #facebooklogo2 {
-      padding-left: 20px;
-   }
-}
-
-#facebooklogo,
-#instagramlogo {
-   display: none;
-}
-
-#servicio {
-   img {
-      width: 20rem;
-      height: 15rem;
-   }
-}
-
-#ubicacion {
-   iframe {
-      width: 90%;
+   #ubicacion {
+      iframe {
+         width: 90%;
+      }
    }
 }
 
@@ -130,11 +129,12 @@ footer {
 
       #facebooklogo,
       #instagramlogo,
-      li {
+      li,
+      .menu {
          display: inherit;
       }
    }
-
+   
    .lead {
       .parrafos {
          text-align: left;
